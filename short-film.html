@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Short Films</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1B1B2F; /* Matches your cyberpunk-inspired palette */
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #333333;
+            color: #FFD700;
+            font-size: 2rem;
+        }
+
+        .video-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .video-item {
+            background-color: #444444;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .video-item h3 {
+            font-size: 1.5rem;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .video-item video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333333;
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 768px) {
+            .video-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        My Short Films
+    </header>
+    <section class="video-gallery">
+        <!-- Video 1 -->
+        <div class="video-item">
+            <h3>Short Film 1</h3>
+            <video controls>
+                <source src="Revival - Short Film PG Dept. of CS.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>A thrilling journey into a mysterious world.</p>
+        </div>
+        <!-- Video 2 -->
+        <div class="video-item">
+            <h3>Short Film 2</h3>
+            <video controls>
+                <source src="SF White Balanced.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>An emotional tale of courage and resilience.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 My Creative Side | All Rights Reserved
+    </footer>
+</body>
+</html>
